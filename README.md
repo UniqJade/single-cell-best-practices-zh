@@ -2,6 +2,8 @@
 
 本仓库是 **《Single-cell best practices》**（单细胞最佳实践）一书的**非官方简体中文翻译镜像**，由机器翻译（Argos Translate）生成静态站点后发布，仅供中文读者学习参考。
 
+- 📖 **在线阅读（推荐，无需下载）**：<https://uniqjade.github.io/single-cell-best-practices-zh/>
+- 📦 离线 / PDF 下载：见 [Releases `0.1.0-zh`](https://github.com/UniqJade/single-cell-best-practices-zh/releases/tag/0.1.0-zh)（整本中文 PDF + 站点离线包）
 - 上游项目仓库：<https://github.com/theislab/single-cell-best-practices>
 - 上游官方站点（英文原文，以其为准）：<https://www.sc-best-practices.org>
 
@@ -9,7 +11,11 @@
 
 ## 在线阅读
 
-本仓库通过 GitHub Pages 提供静态站点，首页会自动跳转到前言页 `preamble.html`。
+**无需克隆或下载本仓库**，浏览器直接打开即可阅读：
+
+### 👉 <https://uniqjade.github.io/single-cell-best-practices-zh/>
+
+首页会自动跳转到前言页 `preamble.html`，可用左侧目录在各章间导航，并支持站内搜索（`Ctrl` / `⌘` + `K`）。
 
 ## 关于原书与署名
 
@@ -29,7 +35,9 @@
 - 每个页面的 `<head>` 中保留了 `source_url`（原文页面地址）与 `translation`（翻译方式）等来源标注元信息，便于溯源比对。
 - 翻译/构建脚本与本地工作流文件保留在作者的工作仓库中，**未包含在本发布仓库内**。
 
-## 本地预览
+## 本地 / 离线预览（可选）
+
+一般直接用上面的在线地址即可；如需离线阅读，可下载 [Release](https://github.com/UniqJade/single-cell-best-practices-zh/releases/tag/0.1.0-zh) 中的站点离线包，或在本仓库根目录启动静态服务器：
 
 ```bash
 # 在仓库根目录启动一个静态服务器
