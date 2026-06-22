@@ -45,6 +45,7 @@ python3 -m http.server 8000
 # 浏览器打开 http://localhost:8000/ （会自动跳转到 preamble.html）
 ```
 
----
+## 反馈问题
 
-如发现翻译问题，建议优先参阅[上游英文原文](https://www.sc-best-practices.org)；与原书内容相关的问题请反馈至[上游仓库](https://github.com/theislab/single-cell-best-practices)。
+- **翻译问题**（措辞不当、术语错误、漏译等）：请在[本仓库提交 Issue](https://github.com/UniqJade/single-cell-best-practices-zh/issues/new)。
+- **原文内容问题**（科学错误、代码 bug、过时信息等）：请反馈至[上游仓库](https://github.com/theislab/single-cell-best-practices/issues/new)；不熟悉英文的读者也可在本仓库提交 Issue，维护者会整理后转报上游。
