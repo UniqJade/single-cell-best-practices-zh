@@ -3,7 +3,7 @@
 本仓库是 **《Single-cell best practices》**（单细胞最佳实践）一书的**非官方简体中文社区镜像**，由社区维护并经过多轮审校，仅供中文读者学习参考。
 
 - 📖 **在线阅读（推荐，无需下载）**：<https://uniqjade.github.io/single-cell-best-practices-zh/>
-- 📦 历史离线 / PDF 快照：见 [Releases `0.1.0-zh`](https://github.com/UniqJade/single-cell-best-practices-zh/releases/tag/0.1.0-zh)（整本中文 PDF + 站点离线包；为静态快照，可能滞后于在线站点）
+- 📦 离线 / PDF 快照：见 [Releases `0.1.0-zh`](https://github.com/UniqJade/single-cell-best-practices-zh/releases/tag/0.1.0-zh)（整本中文 PDF + 站点离线包；已按 `main` commit `2f0a544` 于 2026-07-07 重新生成）
 - 上游项目仓库：<https://github.com/theislab/single-cell-best-practices>
 - 上游官方站点（英文原文，以其为准）：<https://www.sc-best-practices.org>
 
@@ -38,12 +38,12 @@
 ## 同步状态
 
 - 在线站点跟随本仓库 `main` 分支的静态 HTML 与资源文件更新。
-- Release 中的 PDF 与离线包是单独上传的版本快照，不会随 `main` 分支自动更新；若需完全一致的离线版本，应以新的 Release 重新生成并上传。
+- Release 中的 PDF 与离线包是单独上传的版本快照；当前资产已按 `main` commit `2f0a544` 于 2026-07-07 重新生成，但后续不会随 `main` 分支自动更新。
 - 本镜像不保证与上游英文仓库实时同步；维护时会先比对上游变更，再对受影响页面做中文审校与发布。
 
 ## 本地 / 离线预览（可选）
 
-一般直接用上面的在线地址即可；如需离线阅读，可下载 [Release](https://github.com/UniqJade/single-cell-best-practices-zh/releases/tag/0.1.0-zh) 中的历史站点离线包，或在本仓库根目录启动静态服务器：
+一般直接用上面的在线地址即可；如需离线阅读，可下载 [Release](https://github.com/UniqJade/single-cell-best-practices-zh/releases/tag/0.1.0-zh) 中的站点离线包，或在本仓库根目录启动静态服务器：
 
 ```bash
 # 在仓库根目录启动一个静态服务器
