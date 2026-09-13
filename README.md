@@ -17,6 +17,16 @@
 
 正文文字链接与相邻文字留出分隔空格。每章核心术语首次出现时给出中文、完整英文名称及通行缩写；关键要点与主正文分别释义。术语链接支持悬停查看中文定义和跳转术语表。
 
+## 仓库目录
+
+| 入口 | 内容 |
+| --- | --- |
+| [`README.md`](./README.md) | 阅读、下载与反馈说明 |
+| [`LICENSE`](./LICENSE) | 原书与中文镜像的许可证 |
+| [`docs/`](./docs/) | 完整网站的页面、图片和其他阅读资源 |
+
+网站生成的 JavaScript 等资源统一保存在 `docs/`。阅读全文请使用上方的在线阅读入口或离线包。
+
 ## 关于原书与署名
 
 原书《Single-cell best practices》由 Theis 实验室（Theislab）及单细胞社区众多贡献者编写、维护，系统介绍了跨模态单细胞数据分析的最佳实践。著作权与署名归原作者所有。
@@ -32,7 +42,7 @@
 ## 内容来源与同步状态
 
 - 本次迁移对应上游源码提交 [`483cef24f2497cbb20c4eabc4cc6a469b97ce52a`](https://github.com/theislab/single-cell-best-practices/commit/483cef24f2497cbb20c4eabc4cc6a469b97ce52a)。代码、公式及 notebook 保存输出保留；构建网站时不重新执行分析 notebook。
-- 在线站点随本仓库 `main` 分支的静态文件更新。Release 资产是独立版本快照，不会随分支自动更新。
+- 在线站点随本仓库 `main` 分支 `docs/` 目录中的静态文件更新。Release 资产是独立版本快照，不会随分支自动更新。
 - 翻译、构建工具与本地审校记录保存在独立工作仓库，本仓库保存公开站点和说明。
 - 本镜像不保证与上游实时同步；维护时先比对上游变更，再对受影响页面做中文审校与发布。
 
@@ -46,11 +56,13 @@ python3 -m http.server 8000 --bind 127.0.0.1
 
 然后打开 <http://127.0.0.1:8000/single-cell-best-practices-zh/>。请通过本地 HTTP 服务阅读，以便章节跳转和搜索正常加载。正文、图片、字体和公式渲染可离线使用；书中数据下载、外部文献和反馈链接仍需网络。
 
-克隆本仓库预览时，请保留相同的目录名称与访问子路径，在包含 `single-cell-best-practices-zh` 的父目录启动服务：
+克隆本仓库后，网站文件位于 `docs/`。在 macOS / Linux 上，可按以下方式保留本地阅读所需的访问路径：
 
 ```bash
-git clone https://github.com/UniqJade/single-cell-best-practices-zh.git single-cell-best-practices-zh
-python3 -m http.server 8000 --bind 127.0.0.1
+git clone https://github.com/UniqJade/single-cell-best-practices-zh.git single-cell-best-practices-zh-repo
+mkdir -p preview
+ln -s ../single-cell-best-practices-zh-repo/docs preview/single-cell-best-practices-zh
+python3 -m http.server 8000 --bind 127.0.0.1 --directory preview
 ```
 
 同样打开 <http://127.0.0.1:8000/single-cell-best-practices-zh/>。
