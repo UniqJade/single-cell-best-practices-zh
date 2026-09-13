@@ -3,7 +3,7 @@
 本仓库是 **《Single-cell best practices》**（单细胞最佳实践）一书的**非官方简体中文社区镜像**，由社区维护并经过多轮审校，仅供中文读者学习参考。
 
 - 📖 **在线阅读**：<https://uniqjade.github.io/single-cell-best-practices-zh/>
-- 📦 v2 离线包：[0.2.0-zh](https://github.com/UniqJade/single-cell-best-practices-zh/releases/tag/0.2.0-zh)。历史版本 [`0.1.0-zh`](https://github.com/UniqJade/single-cell-best-practices-zh/releases/tag/0.1.0-zh) 提供 v1 中文 PDF 和离线包；v2 中文 PDF 尚未提供。
+- 📦 v2 离线包：[0.2.1-zh](https://github.com/UniqJade/single-cell-best-practices-zh/releases/tag/0.2.1-zh)。历史版本 [`0.1.0-zh`](https://github.com/UniqJade/single-cell-best-practices-zh/releases/tag/0.1.0-zh) 提供 v1 中文 PDF 和离线包；v2 中文 PDF 尚未提供。
 - 上游项目仓库：<https://github.com/theislab/single-cell-best-practices>
 - 上游官方站点（英文原文，以其为准）：<https://www.sc-best-practices.org>
 
