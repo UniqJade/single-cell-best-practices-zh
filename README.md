@@ -1,78 +1,36 @@
-# 单细胞最佳实践 · 简体中文镜像
+# 单细胞最佳实践 · 简体中文版
 
-本仓库是 **《Single-cell best practices》**（单细胞最佳实践）一书的**非官方简体中文社区镜像**，由社区维护并经过多轮审校，仅供中文读者学习参考。
+《Single-cell best practices》的社区中文译本，介绍单细胞数据分析中的常用方法与实践，供学习和查阅。
 
-- 📖 **在线阅读**：<https://uniqjade.github.io/single-cell-best-practices-zh/>
-- 📄 **v2 中文 PDF**：[下载整本（1,048 页，约 118 MB）](https://github.com/UniqJade/single-cell-best-practices-zh/releases/download/0.2.1-zh/single-cell-best-practices-zh-v2.pdf) · [PDF 校验和](https://github.com/UniqJade/single-cell-best-practices-zh/releases/download/0.2.1-zh/single-cell-best-practices-zh-v2.pdf.sha256)
-- 📦 **v2 离线包**：[0.2.1-zh](https://github.com/UniqJade/single-cell-best-practices-zh/releases/tag/0.2.1-zh)。历史版本 [`0.1.0-zh`](https://github.com/UniqJade/single-cell-best-practices-zh/releases/tag/0.1.0-zh) 提供 v1 中文 PDF 和离线包。
-- 上游项目仓库：<https://github.com/theislab/single-cell-best-practices>
-- 上游官方站点（英文原文，以其为准）：<https://www.sc-best-practices.org>
+## 开始阅读
 
-> ⚠️ **社区镜像免责声明**：本镜像由社区维护并经过多轮审校，**仍可能存在错误、滞后或不准确之处**。任何技术细节、结论与代码请以上游英文原文为准。本镜像与上游作者、Theis 实验室无隶属关系，也未获其官方背书。
+- **[在线阅读](https://uniqjade.github.io/single-cell-best-practices-zh/)**：无需下载，可按目录浏览，也可搜索书中内容。
+- **[下载中文 PDF](https://github.com/UniqJade/single-cell-best-practices-zh/releases/download/0.2.1-zh/single-cell-best-practices-zh-v2.pdf)**：全书 1,048 页，约 118 MB，下载后直接打开，适合离线阅读和做笔记。
+- **[下载离线网页版](https://github.com/UniqJade/single-cell-best-practices-zh/releases/download/0.2.1-zh/single-cell-best-practices-zh-offline.zip)**：约 235 MB，保留网页目录、搜索和交互；使用方法见下方。
 
-## 在线阅读
+PDF 中的动画和交互内容以静态形式呈现，体验完整交互请使用网页版。
 
-直接打开在线地址即可阅读 50 页中文内容。左侧目录用于章节导航，站内搜索支持 `Ctrl` / `⌘` + `K`。
+<details>
+<summary>如何使用离线网页版</summary>
 
-站点使用 Jupyter Book v2 / MyST，首屏 HTML、页面数据与搜索内容同步中文化。原有章节 URL 会重定向到对应的新页面；部分旧片段链接无法定位到原位置，已删除标题的入口会回到同章章首。
+只想下载后直接阅读，选择上面的 PDF 即可。
 
-正文文字链接与相邻文字留出分隔空格。每章核心术语首次出现时给出中文、完整英文名称及通行缩写；关键要点与主正文分别释义。术语链接支持悬停查看中文定义和跳转术语表。
-
-## 仓库目录
-
-| 入口 | 内容 |
-| --- | --- |
-| [`README.md`](./README.md) | 阅读、下载与反馈说明 |
-| [`LICENSE`](./LICENSE) | 原书与中文镜像的许可证 |
-| [`docs/`](./docs/) | 完整网站的页面、图片和其他阅读资源 |
-
-网站生成的 JavaScript 等资源统一保存在 `docs/`。阅读全文请使用上方的在线阅读入口或离线包。
-
-## 关于原书与署名
-
-原书《Single-cell best practices》由 Theis 实验室（Theislab）及单细胞社区众多贡献者编写、维护，系统介绍了跨模态单细胞数据分析的最佳实践。著作权与署名归原作者所有。
-
-如需在学术工作中引用，请引用上游论文（以上游仓库 README 提供的信息为准）：
-
-> Heumos, L., Schaar, A.C., Lance, C. et al. *Best practices for single-cell analysis across modalities.* Nature Reviews Genetics 24, 550–572 (2023).
-
-## 许可证
-
-原书以 **Apache License 2.0** 授权（`Copyright 2021 Theislab`）。本中文镜像沿用相同许可证发布，完整条款见本仓库 [`LICENSE`](./LICENSE)。
-
-## 内容来源与同步状态
-
-- 本次迁移对应上游源码提交 [`483cef24f2497cbb20c4eabc4cc6a469b97ce52a`](https://github.com/theislab/single-cell-best-practices/commit/483cef24f2497cbb20c4eabc4cc6a469b97ce52a)。代码、公式及 notebook 保存输出保留；构建网站时不重新执行分析 notebook。
-- 在线站点随本仓库 `main` 分支 `docs/` 目录中的静态文件更新。Release 资产是独立版本快照，不会随分支自动更新。
-- 翻译、构建工具与本地审校记录保存在独立工作仓库，本仓库保存公开站点和说明。
-- 本镜像不保证与上游实时同步；维护时先比对上游变更，再对受影响页面做中文审校与发布。
-
-## 本地 / 离线阅读
-
-中文 PDF 可直接下载阅读，目录和书签支持章节跳转。代码、公式及原书保存输出保留；自测题展开显示，动画使用原动画末帧并提供完整动画链接。PDF 校验和用于核对下载文件的完整性。
-
-使用 v2 离线包时，解压 `single-cell-best-practices-zh-offline.zip`，在解压后的包根目录运行：
+离线网页版需要电脑已安装 Python 3。解压下载的 ZIP，在解压后的文件夹中打开终端，运行：
 
 ```bash
 python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-然后打开 <http://127.0.0.1:8000/single-cell-best-practices-zh/>。请通过本地 HTTP 服务阅读，以便章节跳转和搜索正常加载。正文、图片、字体和公式渲染可离线使用；书中数据下载、外部文献和反馈链接仍需网络。
+然后在浏览器打开 <http://127.0.0.1:8000/single-cell-best-practices-zh/>。阅读期间保持终端开启，结束后按 Ctrl+C 关闭。书中的外部文献和数据下载链接仍需联网。
 
-克隆本仓库后，网站文件位于 `docs/`。在 macOS / Linux 上，可按以下方式保留本地阅读所需的访问路径：
+</details>
 
-```bash
-git clone https://github.com/UniqJade/single-cell-best-practices-zh.git single-cell-best-practices-zh-repo
-mkdir -p preview
-ln -s ../single-cell-best-practices-zh-repo/docs preview/single-cell-best-practices-zh
-python3 -m http.server 8000 --bind 127.0.0.1 --directory preview
-```
+## 原书与反馈
 
-同样打开 <http://127.0.0.1:8000/single-cell-best-practices-zh/>。
+原书由 Theis 实验室及单细胞研究社区编写。本译本由社区独立维护，非官方中文版；翻译可能存在疏漏，如有疑问，请对照 [英文原书](https://www.sc-best-practices.org/)。
 
-AIR 多模态整合章节引用的 `connectionplot.pdf` 未由上游提供，阅读页已明确说明缺失。该说明不影响其余内容阅读。
+发现错译、排版或链接问题，可在 [这里反馈](https://github.com/UniqJade/single-cell-best-practices-zh/issues/new)，附上章节名称或页面链接即可。
 
-## 反馈问题
+原书及作者信息见 [原项目](https://github.com/theislab/single-cell-best-practices)。学术引用请使用原作者的论文：Heumos, L., Schaar, A.C., Lance, C. et al. *Best practices for single-cell analysis across modalities.* Nature Reviews Genetics 24, 550–572 (2023)。
 
-- **中文镜像问题**（措辞、术语、漏译、页面滞后等）：请先参阅 [上游英文原文](https://www.sc-best-practices.org)，再在 [本仓库提交 Issue](https://github.com/UniqJade/single-cell-best-practices-zh/issues/new)。
-- **原文内容问题**（科学错误、代码 bug、过时信息等）：请反馈至 [上游仓库](https://github.com/theislab/single-cell-best-practices/issues/new)；不熟悉英文的读者也可先在本仓库反馈。
+本译本沿用原书的 Apache License 2.0，详见 [许可证](LICENSE)。[查看历史版本](https://github.com/UniqJade/single-cell-best-practices-zh/releases)。
